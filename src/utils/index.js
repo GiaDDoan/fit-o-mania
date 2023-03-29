@@ -1,6 +1,9 @@
 export const exerciseOptions = {
   method: "GET",
-  headers: {},
+  headers: {
+    "X-RapidAPI-Key": process.env.REACT_RAPID_API_KEY,
+    "X-RapidAPI-Host": process.env.REACT_RAPID_API_HOST,
+  },
 };
 
 export const fetchData = async (url, options) => {
