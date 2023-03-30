@@ -33,7 +33,7 @@ const ExerciseCard = ({ exercise }) => {
                 {exercise.target}
             </Button>
         </Stack>
-        <Typography ml='21px' color='#000' fontWeight='bold' mt='11px' pb='10px' textTransorm='capitalize' fontSize='24px'>
+        <Typography ml='21px' color='#000' fontWeight='bold' mt='11px' pb='10px' textTransform='capitalize' fontSize='24px'>
             {exercise.name}
         </Typography>
     </Link>

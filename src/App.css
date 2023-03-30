@@ -119,7 +119,8 @@ body {
   
     .left-arrow,
     .right-arrow {
-      position: static !important;
+      /* position: static !important; */
+      border: solid 1px green;
     }
   
     .hero-banner-img {

@@ -1,8 +1,45 @@
-import React from 'react'
+import React from 'react';
+import { Box, Stack, Typography } from '@mui/material';
 
-const SimilarExercises = () => {
+import HorizontalScrollbar from './HorizontalScrollbar';
+import { Loader } from '../components';
+
+const SimilarExercises = ({ targetMuscleExercises, equipmentMuscleExercises }) => {
+  console.log(equipmentMuscleExercises)
   return (
-    <div>SImilarExercises</div>
+    <Box
+      sx={{
+        mt: { lg: '100px', xs: '0' }
+      }}
+    >
+      <Typography variant='h3' mb={5}>Exercises that taget the same muscle group</Typography>
+      <Stack
+        direction='row'
+        sx={{
+          p: '2',
+          position: 'relative'
+        }}
+      >
+        {targetMuscleExercises.length ?
+          <HorizontalScrollbar data={targetMuscleExercises} />
+          : <Loader />
+        }
+      </Stack>
+
+      <Typography variant='h3' mb={5}>Exercises that uses the same equipment</Typography>
+      <Stack
+        direction='row'
+        sx={{
+          p: '2',
+          position: 'relative'
+        }}
+      >
+        {equipmentMuscleExercises.length ?
+          <HorizontalScrollbar data={equipmentMuscleExercises} />
+          : <Loader />
+        }
+      </Stack>
+    </Box>
   )
 }
 
