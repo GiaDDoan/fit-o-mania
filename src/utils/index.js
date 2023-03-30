@@ -2,7 +2,15 @@ export const exerciseOptions = {
   method: "GET",
   headers: {
     "X-RapidAPI-Key": import.meta.env.VITE_RAPID_API_KEY,
-    "X-RapidAPI-Host": import.meta.env.VITE_RAPID_API_HOST,
+    "X-RapidAPI-Host": import.meta.env.VITE_RAPID_API_EXERCISEDB_HOST,
+  },
+};
+
+export const youtubeOption = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": import.meta.env.VITE_RAPID_API_KEY,
+    "X-RapidAPI-Host": import.meta.env.VITE_RAPID_API_YOUTUBE_HOST,
   },
 };
 
