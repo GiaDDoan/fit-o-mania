@@ -48,7 +48,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         variant='h3'
         mb='46px'
       >
-        Showing Results
+        Showing Results for <span style={{textTransform: 'capitalize', color: '#89513E', fontWeight: 'bold'}}>{bodyPart}</span>
       </Typography>
       <Stack
         direction='row'
